@@ -135,7 +135,7 @@ function searchWeather(location){
         const timeZone = response.data.timezone;
         const cityOffset = currentUtcTime + 1000 * timeZone;
         localTime.innerHTML = formatTime(cityOffset);
-      }, 100);
+      }, 1000);
         feelLike.innerHTML = parseInt(response.data.main.feels_like);
         iconToday.setAttribute(
           "src",
